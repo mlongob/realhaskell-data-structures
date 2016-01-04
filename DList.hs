@@ -43,3 +43,7 @@ dmap f = dfoldr go empty
 
 instance Functor DList where
     fmap = dmap
+
+instance Monoid (DList a) where
+    mempty = empty
+    mappend = append
