@@ -5,6 +5,7 @@ import Control.Monad (when)
 import System.Exit
 import System.Environment (getArgs)
 
+main :: IO ()
 main = do
     args <- getArgs
     when (length args /= 2) $ do
